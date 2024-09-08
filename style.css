@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 1s ease-in-out;
+}
+nav {
+  height: 95px;
+  background-color: blueviolet;
+}
+.nav_options {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.nav_options ul li {
+  list-style: none;
+}
+.nav_options ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+}
+.nav_options ul {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+  margin: 0 2rem 0 1rem;
+}
+.logo {
+  margin: 0 2rem;
+  font-size: 2rem;
+}
+@media (max-width: 1043px) {
+  ul {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .nav_options ul {
+    display: none;
+  }
+}
+.main {
+  height: calc(100vh - 95px);
+  background-image: url(./assets/Dj.webp);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  filter: contrast(1.5);
+}
+.middle {
+  font-size: 5rem;
+  color: white;
+}
+.bold {
+  font-size: 3rem;
+  color: white;
+  margin: 2rem 0;
+}
+.little {
+  color: white;
+}
+@media (max-width: 978px) {
+  .bold,
+  .little {
+    display: none;
+  }
+}
+.mid {
+  height: 100vh;
+  background-color: rgb(99, 4, 189);
+}
+.mid1 {
+  height: 50%;
+  padding: 2rem 10rem 0 10rem;
+  margin-bottom: 7rem;
+}
+.music i {
+  filter: invert(1);
+}
+.music {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  line-height: 1.5;
+}
+.music p {
+  font-size: 1.3rem;
+}
+@media (max-width: 749px) {
+  .music p {
+    display: none;
+  }
+}
+.btn {
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(238, 75, 0);
+  border: none;
+  margin: 1rem 0;
+}
+.mini {
+  font-size: 10px;
+}
+.mid2 {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid2 img {
+  flex-shrink: inherit;
+}
+@media (max-width: 1120px) {
+  .mid2 img {
+    height: 100%;
+    transition: all 1.5s ease-in;
+  }
+  .second_mid2 img {
+    height: 500px;
+  }
+}
+@media (max-width: 786px) {
+  .mid2 img {
+    height: 80%;
+  }
+}
+@media (max-width: 746px) {
+  .mid {
+    padding-bottom: 300px;
+  }
+}
+@media (max-width: 858px) {
+  .second_mid2 img {
+    height: 400px;
+  }
+}
+.second_mid {
+  height: 100vh;
+  margin-top: 250px;
+  text-align: center;
+  line-height: 2;
+}
+.second_mid1 .para {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.second_mid1 {
+  margin: 0 15rem;
+}
+.blue {
+  background-color: rgb(23, 23, 102);
+  border: none;
+}
+.second_mid2 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second_mid2 img {
+  flex-shrink: inherit;
+}
+@media (max-width: 737px) {
+  .second_mid {
+    margin-top: 0;
+    line-height: 1;
+  }
+  .little_para {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  .second_mid2 img {
+    height: 300px;
+  }
+}
+.third_mid {
+  height: 100vh;
+}
+.third_mid1 {
+  height: 70%;
+  background-image: url(./assets/video.png);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.pp {
+  font-size: 2rem;
+}
+.third_mid1 p {
+  font-size: 1rem;
+  padding: 0 300px;
+}
+.third_mid2 {
+  height: 30vh;
+  padding: 0.5rem 1rem;
+  display: flex;
+}
+.gift_card1 {
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+.gift_card1 img {
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+.gift_card2 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  gap: 1rem;
+}
+.gift_card2 p {
+  padding: 0 10rem 0 0;
+}
+
+.redem {
+  width: 150px;
+}
+@media (max-width: 1000px) {
+  .third_mid1 p {
+    display: none;
+  }
+  .gift_card2 p {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  .third_mid2 {
+    flex-direction: column;
+  }
+  .gift_card1 {
+    width: 100%;
+    right: 500px;
+  }
+  .gift_card2 {
+    align-items: flex-end;
+    width: 100%;
+    padding-right: 200px;
+  }
+}
+.footer {
+  height: 40vh;
+  padding: 2rem 0 0 0;
+  background-color: rgb(23, 23, 102);
+}
+.container {
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.foot1 {
+  height: 100%;
+  width: 20%;
+  color: white;
+  line-height: 2;
+}
+.foot1 ul li {
+  list-style: none;
+}
+.foot2 {
+  height: 20%;
+  width: 100%;
+  background-color: blue;
+  text-align: center;
+  padding-top: 1rem;
+  color: white;
+}
+@media (max-width: 1040px) {
+  .nav_options ul {
+    display: none;
+  }
+}
